@@ -16,14 +16,14 @@ public class CollectionTest {
 		s.add(new Collection(104, "abhishek", "mathes"));
 		s.add(new Collection(101, "saurav", "mathes"));
 		
-		 List<Collection> list= new ArrayList();
+		 List<Collection> list= new ArrayList<Collection>();
 		 
 		  list.addAll(s);
 		  
 		  
-		   Set empIds= new HashSet();//flag that keeps employee ids
+		   Set<Integer> empIds= new HashSet<Integer>();//flag that keeps employee ids
 		  
-		  for(Iterator it=list.listIterator();it.hasNext();){
+		  for(Iterator<Collection> it=list.listIterator();it.hasNext();){
 			  Collection stu=(Collection)it.next();
 		  
 		   
