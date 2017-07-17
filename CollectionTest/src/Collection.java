@@ -6,11 +6,13 @@ public class Collection {
 	String name;
 	String subject;
 
-	public Collection(int rollno,String name,String subject ) {
+	public Collection(int rollno,String name,String subject ) { // Creating ParameteriEd constructor
 		this.roll_no=rollno;
 		this.name=name;
 		this.subject=subject;
 	}
+	
+	// setting getter and setter methods
 	public String toString(){
 		return name+""+roll_no+""+subject;
 
