@@ -21,13 +21,13 @@ public class CollectionTest {
 		  list.addAll(s);
 		  
 		  
-		   Set<Integer> empIds= new HashSet<Integer>();//flag that keeps employee ids
+		   Set<Integer> stuIds= new HashSet<Integer>();//flag that keeps employee ids
 		  
 		  for(Iterator<Collection> it=list.listIterator();it.hasNext();){
 			  Collection stu=(Collection)it.next();
 		  
 		   
-		   if(empIds.add(stu.getRoll_no())==false){//if found duplicate remove from the list
+		   if(stuIds.add(stu.getRoll_no())==false){//if found duplicate remove from the list
 		    it.remove();
 		   }
 		  }
@@ -40,3 +40,4 @@ public class CollectionTest {
 	}
 
 }
+
